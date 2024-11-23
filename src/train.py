@@ -1,7 +1,7 @@
 from environment import LaneKeepingEnv
 from agent import QLearningAgent
 
-def train_agent(episodes=1000):
+def train_agent(episodes=100):
     env = LaneKeepingEnv()
     agent = QLearningAgent(n_states=env.road_width, n_actions=3)
 
